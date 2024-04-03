@@ -30,7 +30,7 @@ export default function CategoryPage({ params }: Props) {
     <div>
       <Title 
       title={`Artículos ${ labels[id] }`} 
-      subtitle={``}
+      subtitle={`Best Sellers`}
       className="mb-2" />
 
       <ProductGrid products={ products } />
