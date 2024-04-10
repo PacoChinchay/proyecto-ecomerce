@@ -1,4 +1,4 @@
-import { SizeSelector } from "@/components";
+import { QuantitySelector, SizeSelector } from "@/components";
 import { titleFont } from "@/config/fonts";
 import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation";
@@ -33,7 +33,12 @@ export default function EmptyPage({ params }: Props) {
           ${product.price}
         </p>
 
-        <SizeSelector selectedSize={product.sizes[0]} availableSizes={ product.sizes }/>
+        <SizeSelector 
+        selectedSize={product.sizes[0]} 
+        availableSizes={ product.sizes }/>
+
+        <QuantitySelector 
+        quantity={2}/>
 
         <button className="btn-primary my-5">
           Agregara al carrito
